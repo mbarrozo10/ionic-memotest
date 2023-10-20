@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>juego   {{contador}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">juego</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-grid class="custom-grid"> 
+    <ion-row id="prueba" class="custom-row" *ngFor="let row of getRows(cards);let i = index">
+      <div *ngFor="let card of row">
+        <ion-col class="col">
+          <ion-card class="custom-card">
+            <ion-button (click)="mostrarNumero(card)">
+              <img [src]="card['img']" alt="">
+            </ion-button>
+          </ion-card>
+        </ion-col>
+      </div>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+

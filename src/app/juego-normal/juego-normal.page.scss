@@ -1,0 +1,34 @@
+.custom-grid {
+    height: 100%;
+}
+  .custom-row {
+    height: 19%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+  
+  .custom-card {
+    flex: 1;
+    margin-bottom: 30px; 
+  }
+  
+  ion-card {
+    height: 60%; 
+    width: 100%;
+    margin-right: 10px;
+    ion-button{
+        width: 100%;
+        height: 100%;
+        img{
+            width: 30%;
+            height: auto;
+        }
+        --background: #5271ff;
+    }
+  }
+
+  div{
+    width: 45%;
+  }

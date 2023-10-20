@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="Volver()">
+      <ion-icon name="arrow-back-outline"></ion-icon>    </ion-button>
+  </ion-buttons>
+    <ion-title>Estadisticas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-select value="facil" label="Dificultad" interface="action-sheet"  label-placement="floating" (ionChange)="CambiarFiltro($event)">
+      <ion-select-option value="facil">Facil</ion-select-option>
+      <ion-select-option value="normal">Normal</ion-select-option>
+      <ion-select-option value="dificil">Dificil</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-list>
+    <div *ngFor="let x of partidas">
+    <ion-item>
+      <ion-label>Usuario: {{x['usuario']}} <br>
+      Fecha: {{x['fecha']}} <br>
+      Tiempo: {{x['tiempo']}}</ion-label>
+    </ion-item>
+  </div>
+  </ion-list>
+</ion-content>

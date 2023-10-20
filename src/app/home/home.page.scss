@@ -1,0 +1,39 @@
+
+div{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100%;
+    ion-button{
+        height: 33%;
+        --background: #7c78b8;
+        text-align: justify;
+        font-size: 300%;
+        font-family: Verdana;
+        
+    }
+    font-family: Verdana;
+}
+
+ion-button{
+    border-radius: 80px;
+    font-family: Verdana;
+
+}
+ion-toolbar{
+    --background: #7c78b8;
+    font-family: Verdana;
+    color: white !important;
+    }
+
+.facil{
+     --background: green !important;
+}
+
+.normal{
+    --background: yellow !important;
+}
+    
+.dificil{
+    --background: red !important;
+}
